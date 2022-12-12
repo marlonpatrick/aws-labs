@@ -10,6 +10,7 @@
 # CONDITIONS OF ANY KIND, either express or implied. See the License for the
 # specific language governing permissions and limitations under the License.
 
+# key-condition-expression and expression-attribute-names required because "year" is a reserved word in DynamoDB
 aws dynamodb query \
     --table-name Movies \
     --key-condition-expression "#y = :yr" \

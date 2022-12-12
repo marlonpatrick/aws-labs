@@ -11,8 +11,9 @@
 # specific language governing permissions and limitations under the License.
 
 
+# --item string value can span multiple lines when enclosed in single quotes
 aws dynamodb put-item \
     --table-name Movies \
     --item \
-        '{"year": {"N": "1900"},
-        "title": {"S": "Example 1"}}'
+        '{"year": {"N": "1985"},
+        "title": {"S": "Back to the Future"}}'
